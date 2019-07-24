@@ -1,5 +1,7 @@
 package com.nexusy.libra.webflux.controller;
 
+import com.nexusy.libra.model.RequestParams;
+import com.nexusy.libra.model.ResponseData;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -13,7 +15,7 @@ import reactor.core.publisher.Mono;
 public class TestController {
 
     @RequestMapping("/api/v1/test")
-    public Mono<ResponseData> test(@RequestBody RequestParam requestParams) {
+    public Mono<ResponseData> test(@RequestBody RequestParams requestParams) {
         ResponseData responseData = new ResponseData();
         responseData.setRequestId(requestParams.getRequestId());
         responseData.setClientTime(requestParams.getClientTime());

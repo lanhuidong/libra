@@ -1,10 +1,10 @@
-package com.nexusy.libra.webflux.controller;
+package com.nexusy.libra.model;
 
 /**
  * @author lanhuidong
  * @since 2019-07-24
  */
-public class RequestParam {
+public class RequestParams {
 
     private String requestId;
     private long clientTime;

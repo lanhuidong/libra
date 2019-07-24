@@ -1,4 +1,4 @@
-package com.nexusy.libra.webflux.controller;
+package com.nexusy.libra.model;
 
 /**
  * @author lanhuidong
