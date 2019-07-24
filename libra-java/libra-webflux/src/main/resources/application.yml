@@ -1,0 +1,6 @@
+server:
+  port: 10240
+  ssl:
+    key-store: classpath:libra.jks
+    key-store-password: 472897576
+    key-password: 472897576
