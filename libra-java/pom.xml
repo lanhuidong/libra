@@ -11,6 +11,7 @@
         <module>libra-webflux</module>
         <module>libra-netty</module>
         <module>libra-common</module>
+        <module>libra-mvc</module>
     </modules>
     <packaging>pom</packaging>
 

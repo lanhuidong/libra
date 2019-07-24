@@ -9,9 +9,9 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>libra-webflux</artifactId>
+    <artifactId>libra-mvc</artifactId>
 
-    <name>libra-webflux</name>
+    <name>libra-mvc</name>
     <url>http://www.nexusy.com</url>
 
     <properties>
@@ -36,7 +36,7 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-webflux</artifactId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
             <groupId>com.nexusy</groupId>
@@ -46,7 +46,7 @@
     </dependencies>
 
     <build>
-        <finalName>webflux</finalName>
+        <finalName>mvc</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
