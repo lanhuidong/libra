@@ -2,7 +2,7 @@ package com.nexusy.libra.netty;
 
 import com.nexusy.libra.model.RequestParams;
 import com.nexusy.libra.model.ResponseData;
-import com.nexusy.libra.netty.util.JsonMapper;
+import com.nexusy.libra.util.JsonMapper;
 import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelFutureListener;
 import io.netty.channel.ChannelHandlerContext;

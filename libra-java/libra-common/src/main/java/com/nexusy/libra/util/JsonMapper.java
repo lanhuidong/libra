@@ -1,4 +1,4 @@
-package com.nexusy.libra.netty.util;
+package com.nexusy.libra.util;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.core.JsonProcessingException;

@@ -1,6 +1,6 @@
 package com.nexusy.libra.mvc;
 
-import org.apache.coyote.AbstractProtocol;
+import org.apache.coyote.http11.AbstractHttp11Protocol;
 import org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory;
 import org.springframework.boot.web.servlet.server.ServletWebServerFactory;
 import org.springframework.context.annotation.Bean;
@@ -18,8 +18,8 @@ public class AppConfig {
         TomcatServletWebServerFactory factory = new TomcatServletWebServerFactory();
 
         factory.addConnectorCustomizers(connector -> {
-                ((AbstractProtocol) connector.getProtocolHandler()).setKeepAliveTimeout(-1);
-                ((AbstractProtocol) connector.getProtocolHandler()).setProperty("maxKeepAliveRequests", "-1");
+                ((AbstractHttp11Protocol) connector.getProtocolHandler()).setKeepAliveTimeout(-1);
+                ((AbstractHttp11Protocol) connector.getProtocolHandler()).setMaxKeepAliveRequests(-1);
             }
         );
 
